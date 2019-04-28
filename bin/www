@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const env = require('../env/environment')
+const fastify = require('../app');
+
+const start = async () => {
+    try {
+        fastify.listen(env.port, '0.0.0.0')
+        // fastify.log.info(`server listening on ${fastify.server.address().port}`)
+    } catch (err) {
+        fastify.log.error(err)
+        process.exit(1)
+    }
+}
+
+start()

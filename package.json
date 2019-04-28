@@ -1,0 +1,23 @@
+{
+  "name": "fastify-simple-boilerplate",
+  "version": "0.0.1",
+  "description": "fastify simple boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "cross-env NODE_ENV=development nodemon ./bin/www | pino-pretty-min"
+  },
+  "author": "Qhoirul Anwar",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.3.0",
+    "fastify-cors": "^2.1.2",
+    "fastify-static": "^2.4.0",
+    "mariadb": "^2.0.3"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "pino-colada": "^1.4.4",
+    "pino-pretty-min": "^0.2.1"
+  }
+}
